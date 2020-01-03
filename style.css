@@ -1,18 +1,121 @@
 html {
     box-sizing: border-box;
-    background: #ffc600;
+    background: #B2BA8B;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 20px;
     font-weight: 200;
 }
 
-.navbar {
-    background: #ffc600;
+header {
+    width: 100%;
+    color: white;
+    top: 0.5;
+    z-index: 99;
+    overflow: hidden;
+    background: transparent;
+    position: fixed;
+}
+
+
+/* NAVBAR STYLING */
+
+#navbar {
+    overflow: hidden;
+    background: rgba(37, 33, 32, 0.75);
+    padding: 90px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+#navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#navbar a:hover {
+    background-color: rgba(0, 111, 183, 0.5);
+    color: white;
+}
+
+#navbar-right {
+    float: right;
+}
+
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important;
+    }
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #navbar-right {
+        float: none;
+    }
+    .logo {
+        width: 20%;
+    }
+}
+
+
+/* END NAVBAR STYLING */
+
+#about {
+    background: #B2BA8B;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    color: white;
+    background: #006FB7;
+    text-align: center;
+    padding-top: 50px;
+    height: 100px;
+    font-size: 10px;
+    bottom: 0;
+}
+
+i {
+    color: #006FB7;
+    font-size: 2rem;
+    margin: 15px;
+}
+
+#contact,
+#about {
+    margin: 35px 0;
+    padding: 10px 45px;
+    justify-content: center;
+    text-align: center;
 }
 
 body {
     margin: 0;
 }
+
+
+/* PANEL STYLING */
 
 *,
 *:before,
@@ -61,7 +164,7 @@ body {
 /* Flex Children */
 
 .panel>* {
-    margin: 0;
+    margin-top: 0;
     width: 100%;
     transition: transform 0.5s;
     flex: 1 0 auto;
