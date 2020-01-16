@@ -16,6 +16,10 @@ header {
     position: fixed;
 }
 
+#closing {
+    height: 100%;
+}
+
 
 /* NAVBAR STYLING */
 
